@@ -2,11 +2,11 @@
 *{box-sizing:border-box}
 html{min-height:100%;background:#8e796a}
 body{margin:0;min-height:100vh;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);overflow-x:hidden}
-.background{position:fixed;inset:-25px;background:linear-gradient(rgba(77,63,54,.35),rgba(77,63,54,.45)),url("assets/aqua-tower.png") center 18%/cover;filter:blur(22px);transform:scale(1.08);z-index:-2}
+.background{position:fixed;inset:-25px;background:linear-gradient(rgba(77,63,54,.35),rgba(77,63,54,.45)),url("assets/aqua-edificio.jpeg") center 24%/cover;filter:blur(22px);transform:scale(1.08);z-index:-2}
 .background:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(76,62,54,.32),rgba(169,143,125,.76))}
 .profile{width:min(calc(100% - 32px),580px);min-height:100vh;margin:27px auto 0;background:#b29784;box-shadow:0 0 80px rgba(45,34,29,.3);border-radius:24px 24px 0 0;overflow:hidden;padding-bottom:48px}
 .hero{position:relative;height:690px;overflow:hidden;background:#b29784}
-.hero-image{position:absolute;inset:0 auto auto 0;width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;object-position:center top}
+.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
 .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(163,137,119,.12) 57%,rgba(178,151,132,.91) 79%,#b29784 91%)}
 .top-action{position:absolute;top:29px;display:grid;place-items:center;width:43px;height:43px;border:0;border-radius:16px;background:rgba(248,241,235,.86);color:#171411;box-shadow:0 1px 5px rgba(50,39,32,.08);z-index:2;cursor:pointer}.share-action{right:27px}.share-action svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .hero-copy{position:absolute;left:9%;right:9%;bottom:27px;color:#fff;text-align:center;text-shadow:0 1px 8px rgba(50,39,32,.28)}

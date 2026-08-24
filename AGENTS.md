@@ -60,7 +60,7 @@ Guardar las imágenes dentro de `assets/` y utilizar rutas relativas, por ejempl
 <img src="assets/nueva-imagen.jpg" alt="Descripción de la imagen">
 ```
 
-Optimizar las imágenes antes de subirlas. Evitar nombres con espacios y archivos innecesariamente grandes. Si se reemplaza `assets/aqua-tower.png`, conservar una imagen cuadrada para mantener el encuadre actual.
+Optimizar las imágenes antes de subirlas. Evitar nombres con espacios y archivos innecesariamente grandes. La portada actual es `assets/aqua-edificio.jpeg`, en formato vertical `9:16`; si se reemplaza, conservar esa proporción y mantener el foco visual en la parte superior.
 
 ## Cómo ver el sitio localmente
 
