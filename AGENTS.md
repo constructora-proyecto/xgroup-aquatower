@@ -62,6 +62,27 @@ Guardar las imágenes dentro de `assets/` y utilizar rutas relativas, por ejempl
 
 Optimizar las imágenes antes de subirlas. Evitar nombres con espacios y archivos innecesariamente grandes. La portada actual es `assets/aqua-edificio.jpeg`, en formato vertical `9:16`; si se reemplaza, conservar esa proporción y mantener el foco visual en la parte superior.
 
+### Invalidar la caché de CSS e imágenes
+
+GitHub Pages puede conservar los recursos estáticos en caché durante varias horas. Todos los enlaces a `styles.css` y archivos de `assets/` deben llevar el mismo parámetro de versión:
+
+```html
+<link rel="stylesheet" href="styles.css?v=AAAAMMDD-N">
+<img src="assets/imagen.jpeg?v=AAAAMMDD-N" alt="...">
+```
+
+Las imágenes referenciadas desde CSS también deben incluirlo:
+
+```css
+background-image: url("assets/imagen.jpeg?v=AAAAMMDD-N");
+```
+
+Cuando cambie el CSS o cualquier imagen, incrementar la versión en todas sus apariciones antes de publicar. Usar una búsqueda global para comprobar que no queden recursos sin versión:
+
+```powershell
+Select-String -Path index.html,styles.css -Pattern 'styles\.css|assets/'
+```
+
 ## Cómo ver el sitio localmente
 
 La forma recomendada en Windows es iniciar el servidor HTTP incluido con Python:
